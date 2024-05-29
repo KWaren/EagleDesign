@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="assets/js/tailwind.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>EAGLE VISION</title>
+</head>
+
+<body>
+    <!-- Header  -->
+    <section class="w-full bg-blue-600">
+        <div class="mx-auto flex max-w-7xl items-center h-16 box-content py-1 justify-between">
+
+            <nav
+                class="md:relative md:w-auto w-full md:mt-0 mt-16 translate-y-2 md:translate-y-0 top-0 md:pb-0 pb-3 bg-gray-900 md:bg-transparent absolute items-center md:space-x-2 text-sm font-medium text-gray-300 md:flex hidden">
+                <a href="mailto:info@eaglevisionworld.com" class="ps-5 pe-2 md:py-2 py-3"><i class="text-white text-xl hover:text-yellow-500 fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/233244662064" class="px-2 md:py-2 py-3"><i class="text-white text-xl hover:text-yellow-500  fa-brands fa-whatsapp"></i></a>
+                <a href="tel:+233244662064" class="px-2 md:py-2 py-3"><i class="text-white text-xl hover:text-yellow-500 fa-solid fa-phone"></i></a>
+                <a href="https://web.facebook.com/eaglevisioninstitutegh" class="px-2 md:py-2 py-3"><i class="text-white text-xl hover:text-yellow-500 fa-brands fa-facebook"></i></a>
+
+            </nav>
+            <div class="flex items-center space-x-2 text-sm pr-4 font-medium text-gray-800">
+                <a href="#_" class="rounded bg-amber-400 px-3 py-2 text-white transition hover:bg-amber-400">Online
+                    programme</a>
+            </div>
+        </div>
+    </section>
+    <!-- Header end -->
+
+
+    <!-- Navbar -->
+    <section class="w-full bg-white gray-900">
+        <div class="mx-auto flex max-w-7xl items-center h-16 py-1 box-content justify-between">
+            <div class="flex items-center space-x-2 p-4">
+                <button onclick="
+            document.getElementById('nav').classList.toggle('hidden');
+            document.getElementById('bar1').classList.toggle('rotate-45');
+            document.getElementById('bar1').classList.toggle('translate-y-full');
+            document.getElementById('bar1').classList.toggle('mt-0.5');
+            document.getElementById('bar2').classList.toggle('opacity-0');
+            document.getElementById('bar3').classList.toggle('-rotate-45');
+            document.getElementById('bar3').classList.toggle('absolute');
+            document.getElementById('bar3').classList.toggle('-translate-y-0.5');
+        " class="flex appearance-none p-1 text-gray-500 md:hidden">
+                    <div class="flex w-5 h-5 relative justify-center items-start space-y-1 flex-col">
+                        <span id="bar1"
+                            class="w-full h-0.5 transition-all duration-300 rounded-full bg-gray-500"></span>
+                        <span id="bar2" class="w-5/6 h-0.5 transition-all duration-300 rounded-full bg-gray-500"></span>
+                        <span id="bar3"
+                            class="w-full h-0.5 transition-all duration-300 rounded-full bg-gray-500"></span>
+                    </div>
+                </button>
+                <a href="#_" class="text-gray-900 font-extrabold uppercase text-sm flex items-center">
+                    <img src="https://eaglevisionworld.com/wp-content/uploads/2023/03/EVI-LOGO-Mod-1-e1672137725791.png"
+                        class="w-36" alt="">
+                </a>
+            </div>
+            <nav id="navr"
+                class="md:relative md:w-auto w-full md:mt-0 mt-16 translate-y-2 md:translate-y-0 top-0 md:pb-0 pb-3 bg-white md:bg-transparent absolute items-center md:space-x-2 text-sm font-medium text-gray-500 md:flex hidden">
+                <a href="#_"
+                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Home</a>
+                <a href="#_"
+                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">About
+                    us</a>
+                <a href="#_"
+                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Our
+                    programmes</a>
+                <a href="#_"
+                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Student
+                    life</a>
+                <a href="#_"
+                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Accomodation</a>
+            </nav>
+            <div class="flex items-center space-x-2 text-sm pr-4 font-medium text-gray-800">
+                <a href="#_" class="inline px-3 py-2"><img
+                        src="https://img.freepik.com/vecteurs-premium/drapeau-royaume-uni-illustration-vectorielle-rayures-bleues-rouges_34480-663.jpg?w=1060"
+                        width="28px" alt=""></a>
+                <a href="#_"
+                    class="rounded bg-amber-400 px-3 py-2 text-white transition hover:bg-amber-400">Admission</a>
+            </div>
+        </div>
+    </section>
+    <!-- Navbar End-->
+
+    <!-- Carroussel -->
+    <div id="carouselExampleCaptions" class="relative h-50" data-twe-carousel-init data-twe-ride="carousel">
+        <!--Carousel indicators-->
+        <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+            data-twe-carousel-indicators>
+            <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="0"
+                data-twe-carousel-active
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="1"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 2"></button>
+            <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="2"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <!--Carousel items-->
+        <div class="relative w-full h-50 overflow-hidden after:clear-both after:block after:content-['']">
+            <!--First item-->
+            <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-twe-carousel-active data-twe-carousel-item style="backface-visibility: hidden">
+                <img src="assets/images/slide1.jpg" class="block w-full" alt="..." />
+                <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                    <h5 class="text-xl">First slide label</h5>
+                    <p>
+                        Some representative placeholder content for the first slide.
+                    </p>
+                </div>
+            </div>
+            <!--Second item-->
+            <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-twe-carousel-item style="backface-visibility: hidden">
+                <img src="assets/images/slide2.jpg" class="block w-full" alt="..." />
+                <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                    <h5 class="text-xl">Second slide label</h5>
+                    <p>
+                        Some representative placeholder content for the second slide.
+                    </p>
+                </div>
+            </div>
+            <!--Third item-->
+            <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-twe-carousel-item style="backface-visibility: hidden">
+                <img src="assets/images/slide1.jpg" class="block w-full" alt="..." />
+                <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                    <h5 class="text-xl">Third slide label</h5>
+                    <p>
+                        Some representative placeholder content for the third slide.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Carousel controls - prev item-->
+        <button
+            class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="prev">
+            <span class="inline-block h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+            </span>
+            <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+        </button>
+        <!--Carousel controls - next item-->
+        <button
+            class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="next">
+            <span class="inline-block h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </span>
+            <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+        </button>
+    </div>
+
+    <!-- Programmes -->
+    <section class="bg-white">
+        <div class="w-full px-5 py-6 mx-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl">
+
+            <div class="flex flex-col items-center sm:px-5 md:flex-row">
+                <div class="w-full md:w-1/2">
+                    <a href="#_" class="block">
+                        <img class="object-cover w-full h-full rounded-lg max-h-64 sm:max-h-96"
+                            src="assets/images/slide1.jpg">
+                    </a>
+                </div>
+                <div class="flex flex-col items-start justify-center w-full h-full py-6 mb-6 md:mb-0 md:w-1/2">
+                    <div
+                        class="flex flex-col items-start justify-center h-full space-y-3 transform md:pl-10 lg:pl-16 md:space-y-5">
+                        <!-- <div
+                            class="bg-pink-500 flex items-center pl-2 pr-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
+                            <svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewbox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <span>Featured</span>
+                        </div> -->
+                        <h1 class="text-4xl font-bold leading-none lg:text-5xl xl:text-6xl"><a href="#_">Our programmes</a></h1>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex grid grid-cols-12 pb-10 sm:px-5 gap-x-8 gap-y-16">
+                <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
+                    <a href="#_" class="block">
+                        <img class="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56"
+                            src="assets/images/slide2.jpg">
+                    </a>
+                    <div
+                        class="bg-amber-500 flex items-center w-28 h-1 leading-none rounded-full ">
+                        <!-- <span>Lifestyle</span> -->
+                    </div>
+                    <h2 class="text-lg font-bold sm:text-xl md:text-2xl"><a href="#_">General or Academic English Program</a>
+                    </h2>
+                    <p class="text-sm text-gray-500">
+                        <a class="transition-all hover:text-yellow-500" href="">
+                        The General English Programme at Eagle Vision Language Institute prepares you for effective and appropriate communication in real-life situations.
+                    </a></p>
+
+                </div>
+
+                <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
+                    <a href="#_" class="block">
+                        <img class="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56"
+                            src="assets/images/slide1.jpg">
+                    </a>
+                    <div
+                        class="bg-pink-500 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
+                        <span>See More</span>
+                    </div>
+                    <h2 class="text-lg font-bold sm:text-xl md:text-2xl">Professional or Executive English Programs</h2>
+                    <p class="text-sm text-gray-500"><a href="">The Executive English Programme is a bouquet of individually tailored English courses carefully designed to meet your specific communication</a></p>
+                </div>
+
+                <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
+                    <a href="#_" class="block">
+                        <img class="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56"
+                            src="assets/images/slide1.jpg">
+                    </a>
+                    <div
+                        class="bg-red-500 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
+                        <span>Lifestyle</span>
+                    </div>
+                    <h2 class="text-lg font-bold sm:text-xl md:text-2xl">Vacation English Programs</h2>
+                    <p class="text-sm text-gray-500"><a href="">The Vacation English Immersion Programme is an exceptional opportunity for students to improve their English in an English-speaking environment while.</a></p>
+
+                </div>
+
+                <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
+                    <a href="#_" class="block">
+                        <img class="object-cover w-full mb-2 overflow-hidden rounded-lg max-h-56"
+                            src="assets/images/slide2.jpg">
+                    </a>
+                    <div
+                        class="bg-blue-500 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
+                        <span>Lifestyle</span>
+                    </div>
+                    <h2 class="text-lg font-bold sm:text-xl md:text-2xl">Computer Studies</h2>
+                    <p class="text-sm text-gray-500"><a href="">Today’s digital environment demands that you learn to use computers and other electronic gadgetry effectively. This will increase your productivity at</a></p>
+
+                </div>
+
+                <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
+                    <a href="#_" class="block">
+                        <img class="object-cover w-full mb-2 overflow-hidden rounded-lg max-h-56"
+                            src="assets/images/slide1.jpg">
+                    </a>
+                    <div
+                        class="bg-gray-800 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
+                        <span>Business</span>
+                    </div>
+                    <h2 class="text-lg font-bold sm:text-xl md:text-2xl">TOEFL / IELTS / TOEIC Preparation</h2>
+                    <p class="text-sm text-gray-500"><a href="">Test of English as a Foreign Language is a standardized test to measure the English language ability of non-native speakers</a></p>
+
+                </div>
+
+                <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
+                    <a href="#_" class="block">
+                        <img class="object-cover w-full mb-2 overflow-hidden rounded-lg max-h-56"
+                            src="assets/images/slide2.jpg">
+                    </a>
+                    <div
+                        class="bg-yellow-400 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">
+                        <span>Business skills</span>
+                    </div>
+                    <h2 class="text-lg font-bold sm:text-xl md:text-2xl">Entrepreneurship Training</h2>
+                    <p class="text-sm text-gray-500"><a href="">Every business owner needs core entrepreneurial skills to create and successfully manage their business. Being an entrepreneur is hard work, requires a lot</a></p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Programmes end -->
+
+    <!-- AlpineJS Library -->
+    <!-- hero-18 -->
+    <section class="relative flex flex-col-reverse min-h-screen w-full px-6 py-16 bg-gray-900 lg:pt-0 lg:flex-col lg:pb-0">
+        <div
+            class="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+            <svg class="absolute left-0 hidden h-full text-gray-900 transform -translate-x-1/2 lg:block"
+                viewbox="0 0 100 100" fill="currentColor" preserveaspectratio="none slice">
+                <path d="M50 0H80L50 120H0L50 0Z"></path>
+            </svg>
+            <img class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+                src="assets/images/ceo.jpg" alt="">
+        </div>
+        <div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+            <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
+                <p
+                    class="flex inline-block text-sm font-semibold tracking-wider text-amber-200 uppercase rounded-full mb-7">
+                    MESSAGE FROM OUR CEO
+                </p>
+                <h1 class="mb-5 font-sans text-3xl font-bold tracking-tight text-white sm:text-6xl sm:leading-none">
+                    The CEO's Vision</span>
+                </h1>
+                <p class="mb-5 text-base text-gray-300 sm:pr-10 md:text-lg">
+                    
+Comlan Juvence Babagbeto, CEO of the language institute, envisions a boundless world of communication. Leading with a focus on cultural exchange and innovation, he equips students with the tools to thrive globally, fostering an inspired community and breaking down barriers through language.
+                </p>
+                <div class="flex flex-col items-center pt-2 sm:flex-row sm:pt-4">
+                    <a href="/"
+                        class="inline-flex items-center justify-center w-full h-12 px-6 mb-4 font-medium tracking-wide text-white transition duration-200 bg-amber-500 rounded shadow-md sm:w-auto sm:mr-4 sm:mb-0 hover:bg-amber-700 focus:shadow-outline focus:outline-none">
+                        Book now
+                    </a>
+                    <a href="/"
+                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-700 rounded shadow-md sm:w-auto hover:bg-amber-700 focus:shadow-outline focus:outline-none">
+                        Contact us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AlpineJS Library -->
+
+    <!-- features-06 -->
+    <section
+        class="box-border flex justify-center relative w-full font-sans leading-6 text-gray-700 bg-white border-0 border-gray-200 border-solid">
+        <div
+            class="box-border flex flex-col items-center px-8 py-20 mx-auto leading-6 border-solid max-w-7xl xl:px-16 md:items-stretch md:justify-center md:py-24">
+            <div class="relative pb-10">
+                <h2
+                    class="w-full m-0 font-sans text-4xl font-black leading-loose tracking-wide text-center text-gray-700 border-0 border-gray-200 sm:text-5xl">
+                    Why choose us?
+                </h2>
+                <p
+                    class="w-full max-w-xl mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
+                    Check out our set of awesome features and tools. We are the industry leaders in providing quality
+                    tools, trusted and used by over 1,200 companies. We kind'of rock!
+                </p>
+            </div>
+
+            <div class="z-10 grid gap-5 md:grid-cols-6 lg:grid-cols-9">
+                <!-- Feature 1 -->
+                <div class="col-span-4 font-sans text-gray-700 bg-gray-50 rounded-3xl" data-rounded="rounded-3xl"
+                    data-rounded-max="rounded-full">
+                    <div
+                        class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                        <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full"
+                            data-rounded="rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7"
+                                viewbox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M0 0h24v24H0z" stroke="none"></path>
+                                <path
+                                    d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3M12 12l8-4.5M12 12v9M12 12L4 7.5M16 5.25l-8 4.5">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                            <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                5000</h6>
+                            <p
+                                class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
+                                FOREIGN FOLLOWERS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-span-4 font-sans text-gray-700 bg-gray-50 rounded-3xl" data-rounded="rounded-3xl"
+                    data-rounded-max="rounded-full">
+                    <div
+                        class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                        <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full"
+                            data-rounded="rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7"
+                                width="44" height="44" viewbox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M0 0h24v24H0z" stroke="none"></path>
+                                <path d="M7 12l5 5L22 7M2 12l5 5m5-5l5-5"></path>
+                            </svg>
+
+                        </div>
+                        <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                            <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                20</h6>
+                            <p
+                                class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
+                                CERTIFIED TEACHERS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-span-4 font-sans text-gray-700 bg-gray-50 rounded-3xl" data-rounded="rounded-3xl"
+                    data-rounded-max="rounded-full">
+                    <div
+                        class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                        <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full"
+                            data-rounded="rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7"
+                                width="44" height="44" viewbox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M0 0h24v24H0z" stroke="none"></path>
+                                <path
+                                    d="M9 4.55a8 8 0 016 14.9M15 15v5h5M5.63 7.16v.01M4.06 11v.01M4.63 15.1v.01M7.16 18.37v.01M11 19.94v.01">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                            <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                2240</h6>
+                            <p
+                                class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
+                                STUDENTS ENROLLED.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="col-span-4 font-sans text-gray-700 bg-gray-50 rounded-3xl" data-rounded="rounded-3xl"
+                    data-rounded-max="rounded-full">
+                    <div
+                        class="box-border flex flex-col items-start h-full px-2 py-8 mx-4 leading-6 text-center border-solid sm:flex-row sm:items-start sm:text-left">
+                        <div class="flex-shrink-0 p-3 font-sans text-gray-700 border border-gray-200 rounded-full"
+                            data-rounded="rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="leading-6 text-center text-gray-700 align-middle stroke-current w-7 h-7"
+                                width="44" height="44" viewbox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M0 0h24v24H0z" stroke="none"></path>
+                                <path
+                                    d="M3 12h3M12 3v3M7.8 7.8L5.6 5.6M16.2 7.8l2.2-2.2M7.8 16.2l-2.2 2.2M12 12l9 3-4 2-2 4-3-9">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="mt-4 font-sans text-left text-gray-700 border-0 border-gray-200 sm:mt-2 sm:ml-4">
+                            <h6 class="box-border text-2xl font-bold leading-none tracking-wide text-left border-solid">
+                                2000</h6>
+                            <p
+                                class="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-gray-400 border-solid sm:mt-4">
+                                COMPLETED COURSES
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blob Top Left -->
+        <div class="absolute top-0 left-0 -ml-56 opacity-25 w-96 h-96">
+            <svg class="text-pink-500 opacity-50 fill-current w-88 h-88" data-primary="pink-500" viewbox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M25.5,-24.7C35.8,-15.2,48.9,-7.6,50.6,1.7C52.3,11,42.6,22,32.3,31.2C22,40.4,11,47.8,-1.9,49.8C-14.9,51.7,-29.7,48.1,-41.1,38.9C-52.5,29.7,-60.5,14.9,-60.3,0.3C-60,-14.3,-51.5,-28.6,-40,-38.1C-28.6,-47.6,-14.3,-52.3,-3.4,-48.9C7.6,-45.5,15.2,-34.2,25.5,-24.7Z"
+                    transform="translate(100 100)"></path>
+            </svg>
+        </div>
+        <!-- Blob Top Right -->
+        <!-- <div class="absolute top-0 right-0 -mb-56 opacity-25 w-96 h-96">
+            <svg class="w-full h-full text-yellow-500 opacity-50 fill-current" data-primary="yellow-500"
+                viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M44.3,-48.3C55.3,-33.4,60.4,-16.7,62.2,1.8C64,20.3,62.5,40.6,51.6,55.3C40.6,70,20.3,79,2.3,76.7C-15.7,74.4,-31.4,60.7,-46.7,46C-62,31.4,-76.9,15.7,-78.5,-1.6C-80,-18.8,-68.2,-37.6,-52.9,-52.5C-37.6,-67.5,-18.8,-78.5,-1.1,-77.5C16.7,-76.4,33.4,-63.3,44.3,-48.3Z"
+                    transform="translate(100 100)"></path>
+            </svg>
+        </div> -->
+
+    </section>
+
+    <!-- AlpineJS Library -->
+    <!-- call-to-action-05 -->
+    <section
+        class="flex items-center justify-center py-0 bg-white bg-gradient-to-br from-indigo-600 via-indigo-500 to-teal-400 min-w-screen"
+        data-primary="indigo-600">
+        <div
+            class="relative flex flex-col items-center w-full max-w-6xl px-4 py-8 mx-auto text-center lg:text-left lg:block sm:px-6 md:pb-0 md:pt-12 lg:px-12 lg:py-12">
+            <h2
+                class="my-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl lg:my-0 xl:text-4xl sm:leading-tight">
+                Join our community   <span class="block text-indigo-200 xl:inline" data-primary="indigo-500">of passionate learners</span>
+            </h2>
+            <div class="flex mb-8 lg:mt-6 lg:mb-0">
+                <div class="inline-flex">
+                    <a href="#_"
+                        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white transition duration-150 ease-in-out bg-amber-400 border border-transparent rounded-md hover:text-white hover:bg-amber-500 focus:outline-none focus:shadow-outline "
+                        data-primary="indigo-600">
+                        Book now
+                    </a>
+                </div>
+            </div>
+            <div class="bottom-0 right-0 mb-0 mr-3 lg:absolute lg:-mb-12">
+                <img src="https://cdn.devdojo.com/images/september2020/cta-1.png"
+                    class="max-w-xs mb-4 opacity-75 md:max-w-2xl lg:max-w-lg xl:mb-0 xl:max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- AlpineJS Library -->
+    <!-- testimonials-09 -->
+    <section class="w-full bg-gray-50 sm:py-16 py-12 md:py-20 relative">
+        <div class="max-w-7xl mx-auto px-10">
+            <div class="flex flex-col mb-7 sm:mb-20 items-start md:items-center justify-center">
+                <p class="sm:tracking-widest sm:text-base text-sm uppercase font-medium text-gray-500">What people are
+                    saying about us</p>
+                <h2
+                    class="text-gray-900 mt-2 text-2xl sm:text-4xl tracking-tight font-bold sm:font-extrabold md:text-5xl ">
+                    Listen to opinions about us.</h2>
+                <div class="mt-1 md:mt-4 items-center flex text-blue-600">
+                    <svg class="w-8 h-8 sm:block hidden mr-1.5 mt-0.5" fill="currentColor" viewbox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="text-xl md:text-4xl tracking-tight sm:font-bold sm:text-3xl">view our many
+                        testimonials</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-6 w-full">
+                <div class="col-span-4 space-y-6">
+                    <div class="h-auto bg-white rounded-xl shadow-sm p-6 relative">
+                        <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                            <img src="https://cdn.devdojo.com/images/january2022/01-john-robertson.jpeg"
+                                class="rounded-full mr-3 w-12 h-12">
+                            <div class="relative">
+                                <p class="font-semibold text-gray-600 leading-none my-1">John Robertson</p>
+                                <p class="font-medium text-gray-400 text-sm">Director of Sales at Workflow</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-800 z-10 leading-7 relative pb-3">"Using this service was the best
+                            decision I've ever made. We have been able to 10x our output with minimal effort. Love these
+                            guys!"</blockquote>
+                        <svg class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                            fill="currentColor" viewbox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="h-auto bg-white rounded-xl shadow-sm p-6 relative">
+                        <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                            <img src="https://cdn.devdojo.com/images/january2022/02-mike-samson.jpeg"
+                                class="rounded-full mr-3 w-12 h-12">
+                            <div class="relative">
+                                <p class="font-semibold text-gray-600 leading-none my-1">Mike Samson</p>
+                                <p class="font-medium text-gray-400 text-sm">CEO at Blocknet</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-800 z-10 leading-7 relative pb-3">"I can't express how many times
+                            this product has saved my ass on a day-to-day basis!<br><br>Thanks for the awesome product
+                            guys. Keep up the great work."</blockquote>
+                        <svg class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                            fill="currentColor" viewbox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="h-auto bg-white rounded-xl shadow-sm p-6 relative">
+                        <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                            <img src="https://cdn.devdojo.com/images/january2022/03-jack-bennington.jpeg"
+                                class="rounded-full mr-3 w-12 h-12">
+                            <div class="relative">
+                                <p class="font-semibold text-gray-600 leading-none my-1">Jack Bennington</p>
+                                <p class="font-medium text-sm text-gray-400">CTO at TNT Solutions</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-800 z-10 leading-7 relative pb-3">"Simply Amazing!<br><br>These are
+                            the best guys in this field. It's a no-brainer to use them over the competition."
+                        </blockquote>
+                        <svg class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                            fill="currentColor" viewbox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="col-span-4 sm:block hidden space-y-5">
+                    <div class="h-auto bg-white rounded-xl shadow-sm p-6 relative">
+                        <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                            <img src="https://cdn.devdojo.com/images/january2022/04-steve-mitchell.jpeg"
+                                class="rounded-full mr-3 w-12 h-12">
+                            <div class="relative">
+                                <p class="font-semibold text-gray-600 leading-none my-1">Steve Mitchell</p>
+                                <p class="font-medium text-sm text-gray-400">CEO and Partner at Rakstation</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-800 z-10 leading-7 relative pb-3">"Finding the perfect solution for
+                            our use-case was easier than ever after we utilized these tools and services. <br><br>The
+                            developer API was a delight to work with and the team is always willing to help out. I can't
+                            recommend these guys enough!"</blockquote>
+                        <svg class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                            fill="currentColor" viewbox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="h-auto bg-white rounded-xl shadow-sm p-6 relative">
+                        <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                            <img src="https://cdn.devdojo.com/images/january2022/05-ron-garrison.jpeg"
+                                class="rounded-full mr-3 w-12 h-12">
+                            <div class="relative">
+                                <p class="font-semibold text-gray-600 leading-none my-1">Ron Garrison</p>
+                                <p class="font-medium text-sm text-gray-400">Lead Developer at Devworks</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-800 z-10 leading-7 relative pb-3">"We had been looking for a good
+                            solution to maintain our infastructure, after integration these solutions into our platform
+                            we have saved hundreds of hours."</blockquote>
+                        <svg class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                            fill="currentColor" viewbox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="h-auto bg-white rounded-xl shadow-sm p-6 relative">
+                        <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                            <img src="https://cdn.devdojo.com/images/january2022/06-charlie-madocks.jpeg"
+                                class="rounded-full mr-3 w-12 h-12">
+                            <div class="relative">
+                                <p class="font-semibold text-gray-600 leading-none my-1">Charlie Madocks</p>
+                                <p class="font-medium text-sm text-gray-400">Director of Marketing at Goji</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-800 z-10 leading-7 relative pb-3">"This team is at the edge of
+                            innovation. We are so proud to be one of their longest customers.<br><br>You guys are the
+                            best!"</blockquote>
+                        <svg class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                            fill="currentColor" viewbox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="col-span-4 lg:block hidden space-y-5">
+                    <div class="h-auto bg-white rounded-xl shadow-sm p-6 relative">
+                        <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                            <img src="https://cdn.devdojo.com/images/january2022/07-nick-thompson.jpeg"
+                                class="rounded-full mr-3 w-12 h-12">
+                            <div class="relative">
+                                <p class="font-semibold text-gray-600 leading-none my-1">Nick Thompson</p>
+                                <p class="font-medium text-sm text-gray-400">CTO at Craftyworks</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-800 z-10 leading-7 relative pb-3">"Amazing team and amazing
+                            service.<br><br>If you want the best possible chance of succeeding in your business you'll
+                            utilize this service and thrive with them!"</blockquote>
+                        <svg class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                            fill="currentColor" viewbox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="h-auto bg-white rounded-xl shadow-sm p-6 relative">
+                        <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                            <img src="https://cdn.devdojo.com/images/january2022/08-jake-walters.jpeg"
+                                class="rounded-full mr-3 w-12 h-12">
+                            <div class="relative">
+                                <p class="font-semibold text-gray-600 leading-none my-1">Jake Walters</p>
+                                <p class="font-medium text-sm text-gray-400">CFO at Edgeworks</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-800 z-10 leading-7 relative pb-3">"We couldn't be happier with how
+                            easy it was to integrate their service with our application.<br><br>We are now having the
+                            best year in sales and customer satisfaction."</blockquote>
+                        <svg class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                            fill="currentColor" viewbox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="h-auto bg-white rounded-xl shadow-sm p-6 relative">
+                        <div class="flex items-center border-b relative border-gray-100 border-solid pb-5 mb-5">
+                            <img src="https://cdn.devdojo.com/images/january2022/09-sam-robinson.jpeg"
+                                class="rounded-full mr-3 w-12 h-12">
+                            <div class="relative">
+                                <p class="font-semibold text-gray-600 leading-none my-1">Sam Robinson</p>
+                                <p class="font-medium text-sm text-gray-400">Lead Developer at Socnet</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-800 z-10 leading-7 relative pb-3">"I didn't realize it was this
+                            easy to get organized and integrated with their service!"</blockquote>
+                        <svg class="h-auto absolute z-0 top-0 right-0 w-12 opacity-30 mt-6 mr-7 text-gray-200"
+                            fill="currentColor" viewbox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="bg-gradient-to-t from-gray-50 h-96 w-full bottom-0 left-0 absolute z-20 flex items-end justify-center">
+            <a href="#_"
+                class="mb-12 font-medium text-gray-400 hover:text-gray-500 rounded-lg text-sm flex items-center justify-center">
+                <svg class="w-5 h-5 mr-1.5 -ml-1" fill="currentColor" viewbox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <span>View All Testimonials</span>
+            </a>
+        </div>
+    </section>
+    <!-- AlpineJS Library -->
+
+    <!-- faqs-10 -->
+    <section class="py-12 bg-blue-600 sm:py-16 md:py-20 lg:py-24 pb-28" data-primary="amber-600"
+        data-tails-scripts="//unpkg.com/alpinejs">
+        <div class="max-w-6xl px-8 mx-auto lg:px-16">
+            <h2 class="mb-2 text-2xl font-bold text-center text-white md:text-3xl lg:text-4xl">Frequently Asked
+                Questions</h2>
+
+            <div class="relative flex flex-col mt-8 mt-16 lg:flex-row">
+
+                <!-- Left side of FAQs -->
+                <div class="relative w-full space-y-3 lg:space-y-5 lg:w-1/2 lg:pr-4">
+                    <!-- Question 1 -->
+                    <div x-data="{ show: false }"
+                        class="relative px-6 py-2 overflow-hidden text-white bg-blue-800 rounded-lg select-none"
+                        data-primary="amber-600" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                        <h4 class="flex items-center justify-between py-4 text-base font-medium text-amber-100 cursor-pointer sm:text-lg hover:text-white"
+                            data-primary="amber-600">
+                            <span>Where do I go to upgrade my account?</span>
+                            <svg class="w-4 h-4 mr-1 transition-all duration-200 ease-out transform rotate-0"
+                                :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </h4>
+                        <p class="px-1 pt-0 mt-1 text-amber-200 sm:text-lg py-7" data-primary="amber-600"
+                            x-transition:enter="transition-all ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-4"
+                            x-transition:enter-end="opacity-100 transform -translate-y-0"
+                            x-transition:leave="transition-all ease-out hidden duration-200"
+                            x-transition:leave-start="opacity-100 transform -translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-4" x-show="show" x-cloak>You can
+                            upgrade your account by visiting The Pro Upgrade Page. You will also gain access to many
+                            other applications and sections of the site.</p>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div x-data="{ show: false }"
+                        class="relative px-6 py-2 overflow-hidden text-white bg-blue-800 rounded-lg select-none"
+                        data-primary="amber-600" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                        <h4 class="flex items-center justify-between py-4 text-base font-medium text-amber-100 cursor-pointer sm:text-lg hover:text-white"
+                            data-primary="amber-600">
+                            <span>How do I use Tails in my project?</span>
+                            <svg class="w-4 h-4 mr-1 transition-all duration-200 ease-out transform rotate-0"
+                                :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </h4>
+                        <p class="px-1 pt-0 mt-1 text-amber-200 sm:text-lg py-7" data-primary="amber-600"
+                            x-transition:enter="transition-all ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-4"
+                            x-transition:enter-end="opacity-100 transform -translate-y-0"
+                            x-transition:leave="transition-all ease-out hidden duration-200"
+                            x-transition:leave-start="opacity-100 transform -translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-4" x-show="show" x-cloak>
+                            Implementation in your project is very simple. You can use the exported page as a starting
+                            point, or you can copy and paste the HTML into your own page.</p>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div x-data="{ show: false }"
+                        class="relative px-6 py-2 overflow-hidden text-white bg-blue-800 rounded-lg select-none"
+                        data-primary="amber-600" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                        <h4 class="flex items-center justify-between py-4 text-base font-medium text-amber-100 cursor-pointer sm:text-lg hover:text-white"
+                            data-primary="amber-600">
+                            <span>How long will I have access to Tails?</span>
+                            <svg class="w-4 h-4 mr-1 transition-all duration-200 ease-out transform rotate-0"
+                                :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </h4>
+                        <p class="px-1 pt-0 mt-1 text-amber-200 sm:text-lg py-7" data-primary="amber-600"
+                            x-transition:enter="transition-all ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-4"
+                            x-transition:enter-end="opacity-100 transform -translate-y-0"
+                            x-transition:leave="transition-all ease-out hidden duration-200"
+                            x-transition:leave-start="opacity-100 transform -translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-4" x-show="show" x-cloak>You will
+                            have unlimited access to all your pre-built pages; however, if you want to be able to
+                            download and export your pages, you'll need a pro account. Paddle for processing payments.
+                        </p>
+                    </div>
+
+
+                    <!-- Question 4 -->
+                    <div x-data="{ show: false }"
+                        class="relative px-6 py-2 overflow-hidden text-white bg-blue-800 rounded-lg select-none"
+                        data-primary="amber-600" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                        <h4 class="flex items-center justify-between py-4 text-base font-medium text-amber-100 cursor-pointer sm:text-lg hover:text-white"
+                            data-primary="amber-600">
+                            <span>What is the license on the pages?</span>
+                            <svg class="w-4 h-4 mr-1 transition-all duration-200 ease-out transform rotate-0"
+                                :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </h4>
+                        <p class="px-1 pt-0 mt-1 text-amber-200 sm:text-lg py-7" data-primary="amber-600"
+                            x-transition:enter="transition-all ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-4"
+                            x-transition:enter-end="opacity-100 transform -translate-y-0"
+                            x-transition:leave="transition-all ease-out hidden duration-200"
+                            x-transition:leave-start="opacity-100 transform -translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-4" x-show="show" x-cloak>You have
+                            unlimited use to the templates used in Tails; however, you cannot re-use the templates to
+                            sell for others to use.</p>
+                    </div>
+                </div>
+
+
+                <!-- Right side of FAQs -->
+                <div class="relative w-full mt-3 space-y-3 lg:mt-0 lg:space-y-5 lg:w-1/2 lg:pl-4">
+                    <!-- Question 1 -->
+                    <div x-data="{ show: false }"
+                        class="relative px-6 py-2 overflow-hidden text-white bg-blue-800 rounded-lg select-none"
+                        data-primary="amber-600" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                        <h4 class="flex items-center justify-between py-4 text-base font-medium text-amber-100 cursor-pointer sm:text-lg hover:text-white"
+                            data-primary="amber-600">
+                            <span>How Many API Calls Do I Get?</span>
+                            <svg class="w-4 h-4 mr-1 transition-all duration-200 ease-out transform rotate-0"
+                                :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </h4>
+                        <p class="px-1 pt-0 mt-1 text-amber-200 sm:text-lg py-7" data-primary="amber-600"
+                            x-transition:enter="transition-all ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-4"
+                            x-transition:enter-end="opacity-100 transform -translate-y-0"
+                            x-transition:leave="transition-all ease-out hidden duration-200"
+                            x-transition:leave-start="opacity-100 transform -translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-4" x-show="show" x-cloak>The free
+                            plan will give you 2,000 free API calls. At anytime, if you wish to <a href="#_"
+                                class="font-medium text-amber-100 underline">upgrade to a paid plan</a>, you can
+                            eaisily increase that amount.</p>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div x-data="{ show: false }"
+                        class="relative px-6 py-2 overflow-hidden text-white bg-blue-800 rounded-lg select-none"
+                        data-primary="amber-600" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                        <h4 class="flex items-center justify-between py-4 text-base font-medium text-amber-100 cursor-pointer sm:text-lg hover:text-white"
+                            data-primary="amber-600">
+                            <span>Where Can I Learn More?</span>
+                            <svg class="w-4 h-4 mr-1 transition-all duration-200 ease-out transform rotate-0"
+                                :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </h4>
+                        <p class="px-1 pt-0 mt-1 text-amber-200 sm:text-lg py-7" data-primary="amber-600"
+                            x-transition:enter="transition-all ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-4"
+                            x-transition:enter-end="opacity-100 transform -translate-y-0"
+                            x-transition:leave="transition-all ease-out hidden duration-200"
+                            x-transition:leave-start="opacity-100 transform -translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-4" x-show="show" x-cloak>You can
+                            learn more about using our API by visiting our <a href="#_"
+                                class="font-medium text-amber-100 underline">Academy page</a> which contains
+                            screencasts that will teach you the ins-and-outs of using the API. You may also visit the <a
+                                href="#_" class="font-medium text-amber-100 underline">developer docs</a> to learn
+                            more.</p>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div x-data="{ show: false }"
+                        class="relative px-6 py-2 overflow-hidden text-white bg-blue-800 rounded-lg select-none"
+                        data-primary="amber-600" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                        <h4 class="flex items-center justify-between py-4 text-base font-medium text-amber-100 cursor-pointer sm:text-lg hover:text-white"
+                            data-primary="amber-600">
+                            <span>Do You Have Any SDK's?</span>
+                            <svg class="w-4 h-4 mr-1 transition-all duration-200 ease-out transform rotate-0"
+                                :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </h4>
+                        <p class="px-1 pt-0 mt-1 text-amber-200 sm:text-lg py-7" data-primary="amber-600"
+                            x-transition:enter="transition-all ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-4"
+                            x-transition:enter-end="opacity-100 transform -translate-y-0"
+                            x-transition:leave="transition-all ease-out hidden duration-200"
+                            x-transition:leave-start="opacity-100 transform -translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-4" x-show="show" x-cloak>
+                            Absolutely, we have an SDK for most of the popular languages and frameworks. Be sure to
+                            visit our <a href="#_" class="font-medium text-amber-100 underline">list of SDK's</a> to
+                            learn how you can build on top of our service.</p>
+                    </div>
+
+
+                    <!-- Question 4 -->
+                    <div x-data="{ show: false }"
+                        class="relative px-6 py-2 overflow-hidden text-white bg-blue-800 rounded-lg select-none"
+                        data-primary="amber-600" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                        <h4 class="flex items-center justify-between py-4 text-base font-medium text-amber-100 cursor-pointer sm:text-lg hover:text-white"
+                            data-primary="amber-600">
+                            <span>Can I Become an Affiliate?</span>
+                            <svg class="w-4 h-4 mr-1 transition-all duration-200 ease-out transform rotate-0"
+                                :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </h4>
+                        <p class="px-1 pt-0 mt-1 text-amber-200 sm:text-lg py-7" data-primary="amber-600"
+                            x-transition:enter="transition-all ease-out duration-300"
+                            x-transition:enter-start="opacity-0 transform -translate-y-4"
+                            x-transition:enter-end="opacity-100 transform -translate-y-0"
+                            x-transition:leave="transition-all ease-out hidden duration-200"
+                            x-transition:leave-start="opacity-100 transform -translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-4" x-show="show" x-cloak>Yes. We
+                            are utilizing <a href="https://paddle.com"
+                                class="font-medium text-amber-100 underline">paddle</a>, which has a fully functional
+                            affiliate program. <a href="#_" class="font-medium text-amber-100 underline">Click here</a>
+                            to signup as an affiliate.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AlpineJS Library -->
+    <!-- form-06 -->
+    <section class="h-auto bg-white">
+        <div class="max-w-7xl mx-auto py-4 px-10  sm:px-6 lg:px-8 sm:text-center">
+            <!-- <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">subtitle text</h2> -->
+            <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+                Contact-us
+            </p>
+            <p class="max-w-3xl mt-5 mx-auto text-xl text-gray-500">Besoin d'aide ou de plus d'informations ? Notre
+                équipe
+                est là pour vous. Contactez-nous dès maintenant pour toute question, demande de renseignement ou
+                assistance.
+            </p>
+        </div>
+    </section>
+    <section class="relative py-0 bg-white lg:py-6">
+
+        <div class="flex flex-col items-center justify-between px-10 mx-auto max-w-8xl  lg:flex-row">
+
+            <div class="flex flex-col items-center w-full px-10 pt-5 pb-20 lg:pt-20 lg:flex-row">
+                <div class="relative z-10 w-full px-2 lg:w-6/12">
+                    <div class="relative z-10  p-10 bg-white shadow-2xl rounded-xl">
+                        <div class="grid gap-2 mt-8 leading-7 border-0 border-gray-200 lg:gap-4">
+                            <div class="box-border flex items-start text-gray-900 border-solid">
+                                <div class="flex items-center justify-center w-12 h-12 leading-7 bg-amber-600 border-0 border-gray-200 rounded-full"
+                                    data-primary="blue-600" data-rounded="rounded-full">
+                                    <p class="box-border m-0 text-xl text-white border-solid">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
+                                            </path>
+                                        </svg>
+                                    </p>
+                                </div>
+                                <div class="flex-1 ml-6 leading-7 border-0 border-gray-200">
+                                    <h3
+                                        class="box-border m-0 text-lg font-semibold leading-tight tracking-tight text-black border-solid sm:text-xl md:text-2xl">
+                                        Adresse</h3>
+                                    <p class="box-border mt-2 text-base leading-normal text-gray-900 border-solid">
+                                        Achimota, Accra</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="box-border flex items-start text-gray-900 border-solid">
+                                <div class="flex items-center justify-center w-12 h-12 leading-7 bg-amber-600 border-0 border-gray-200 rounded-full"
+                                    data-primary="blue-600" data-rounded="rounded-full">
+                                    <p class="box-border m-0 text-xl text-white border-solid">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207">
+                                            </path>
+                                        </svg>
+                                    </p>
+                                </div>
+                                <div class="flex-1 ml-6 leading-7 border-0 border-gray-200">
+                                    <h3
+                                        class="box-border m-0 text-lg font-semibold leading-tight tracking-tight text-black border-solid sm:text-xl md:text-2xl">
+                                        Phone</h3>
+                                    <p class="box-border mt-2 text-base leading-normal text-gray-900 border-solid">
+                                        +233 22 222 2222
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="box-border flex items-start text-gray-900 border-solid">
+                                <div class="flex items-center justify-center w-12 h-12 leading-7 bg-amber-600 border-0 border-gray-200 rounded-full"
+                                    data-primary="blue-600" data-rounded="rounded-full">
+                                    <p class="box-border m-0 text-xl text-white border-solid">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+                                            </path>
+                                        </svg>
+                                    </p>
+                                </div>
+                                <div class="flex-1 ml-6 leading-7 border-0 border-gray-200">
+                                    <h3
+                                        class="box-border m-0 text-lg font-semibold leading-tight tracking-tight text-black border-solid sm:text-xl md:text-2xl">
+                                        Email</h3>
+                                    <p class="box-border mt-2 text-base leading-normal text-gray-900 border-solid">
+                                        eagle@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <br>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7890.184653261377!2d-0.24348696026171054!3d5.625747910823161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99691981b855%3A0x97e4bea60f760213!2sEagle%20Vision%20Language%20Institute!5e0!3m2!1sfr!2sgh!4v1716502736797!5m2!1sfr!2sgh"
+                            class="w-full" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="relative z-10 w-full px-2  mt-20 lg:mt-0 lg:w-6/12">
+                    <div
+                        class="relative z-10 flex flex-col items-start justify-start p-10 bg-white shadow-2xl rounded-xl">
+
+                        <div class="relative w-full mt-6 space-y-8">
+                            <div class="flex flex-row">
+                                <div class="relative lg:w-6/12 lg:px-6">
+                                    <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">Votre
+                                        nom</label>
+                                    <input type="text"
+                                        class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-black"
+                                        data-rounded="rounded-lg" placeholder="John">
+                                </div>
+                                <div class="relative lg:w-6/12 lg:px-6">
+                                    <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">Adresse
+                                        email</label>
+                                    <input type="text"
+                                        class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-black"
+                                        data-rounded="rounded-lg" placeholder="@">
+                                </div>
+                            </div>
+
+                            <div class="relative lg:px-6">
+                                <label class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">Objet du
+                                    message</label>
+                                <input type="text"
+                                    class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-black"
+                                    data-rounded="rounded-lg" placeholder="">
+                            </div>
+                            <div class="relative lg:px-6">
+                                <label
+                                    class="absolute px-2 ml-2 -mt-3 font-medium text-gray-600 bg-white">Mesage</label>
+                                <textarea name="message" data-rounded="rounded-lg" placeholder="Votre message"
+                                    class="block w-full px-4 py-4 mt-2 text-base placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-black"
+                                    id="" cols="30" rows="10"></textarea>
+
+                            </div>
+                            <div class="relative lg:px-6">
+                                <a href="#_"
+                                    class="inline-block w-full px-5 py-4 text-md font-medium text-center text-white transition duration-200 bg-amber-600 rounded-lg hover:bg-amber-400 ease"
+                                    data-primary="yellow-400" data-rounded="rounded-lg">Envoyer le message</a>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <svg class="absolute top-0 left-0 z-0 w-32 h-32 -mt-12 -ml-12 text-gray-200 fill-current"
+                        viewbox="0 0 91 91" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                            <g fill-rule="nonzero">
+                                <g>
+                                    <g>
+                                        <circle cx="3.261" cy="3.445" r="2.72"></circle>
+                                        <circle cx="15.296" cy="3.445" r="2.719"></circle>
+                                        <circle cx="27.333" cy="3.445" r="2.72"></circle>
+                                        <circle cx="39.369" cy="3.445" r="2.72"></circle>
+                                        <circle cx="51.405" cy="3.445" r="2.72"></circle>
+                                        <circle cx="63.441" cy="3.445" r="2.72"></circle>
+                                        <circle cx="75.479" cy="3.445" r="2.72"></circle>
+                                        <circle cx="87.514" cy="3.445" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 12)">
+                                        <circle cx="3.261" cy="3.525" r="2.72"></circle>
+                                        <circle cx="15.296" cy="3.525" r="2.719"></circle>
+                                        <circle cx="27.333" cy="3.525" r="2.72"></circle>
+                                        <circle cx="39.369" cy="3.525" r="2.72"></circle>
+                                        <circle cx="51.405" cy="3.525" r="2.72"></circle>
+                                        <circle cx="63.441" cy="3.525" r="2.72"></circle>
+                                        <circle cx="75.479" cy="3.525" r="2.72"></circle>
+                                        <circle cx="87.514" cy="3.525" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 24)">
+                                        <circle cx="3.261" cy="3.605" r="2.72"></circle>
+                                        <circle cx="15.296" cy="3.605" r="2.719"></circle>
+                                        <circle cx="27.333" cy="3.605" r="2.72"></circle>
+                                        <circle cx="39.369" cy="3.605" r="2.72"></circle>
+                                        <circle cx="51.405" cy="3.605" r="2.72"></circle>
+                                        <circle cx="63.441" cy="3.605" r="2.72"></circle>
+                                        <circle cx="75.479" cy="3.605" r="2.72"></circle>
+                                        <circle cx="87.514" cy="3.605" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 36)">
+                                        <circle cx="3.261" cy="3.686" r="2.72"></circle>
+                                        <circle cx="15.296" cy="3.686" r="2.719"></circle>
+                                        <circle cx="27.333" cy="3.686" r="2.72"></circle>
+                                        <circle cx="39.369" cy="3.686" r="2.72"></circle>
+                                        <circle cx="51.405" cy="3.686" r="2.72"></circle>
+                                        <circle cx="63.441" cy="3.686" r="2.72"></circle>
+                                        <circle cx="75.479" cy="3.686" r="2.72"></circle>
+                                        <circle cx="87.514" cy="3.686" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 49)">
+                                        <circle cx="3.261" cy="2.767" r="2.72"></circle>
+                                        <circle cx="15.296" cy="2.767" r="2.719"></circle>
+                                        <circle cx="27.333" cy="2.767" r="2.72"></circle>
+                                        <circle cx="39.369" cy="2.767" r="2.72"></circle>
+                                        <circle cx="51.405" cy="2.767" r="2.72"></circle>
+                                        <circle cx="63.441" cy="2.767" r="2.72"></circle>
+                                        <circle cx="75.479" cy="2.767" r="2.72"></circle>
+                                        <circle cx="87.514" cy="2.767" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 61)">
+                                        <circle cx="3.261" cy="2.846" r="2.72"></circle>
+                                        <circle cx="15.296" cy="2.846" r="2.719"></circle>
+                                        <circle cx="27.333" cy="2.846" r="2.72"></circle>
+                                        <circle cx="39.369" cy="2.846" r="2.72"></circle>
+                                        <circle cx="51.405" cy="2.846" r="2.72"></circle>
+                                        <circle cx="63.441" cy="2.846" r="2.72"></circle>
+                                        <circle cx="75.479" cy="2.846" r="2.72"></circle>
+                                        <circle cx="87.514" cy="2.846" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 73)">
+                                        <circle cx="3.261" cy="2.926" r="2.72"></circle>
+                                        <circle cx="15.296" cy="2.926" r="2.719"></circle>
+                                        <circle cx="27.333" cy="2.926" r="2.72"></circle>
+                                        <circle cx="39.369" cy="2.926" r="2.72"></circle>
+                                        <circle cx="51.405" cy="2.926" r="2.72"></circle>
+                                        <circle cx="63.441" cy="2.926" r="2.72"></circle>
+                                        <circle cx="75.479" cy="2.926" r="2.72"></circle>
+                                        <circle cx="87.514" cy="2.926" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 85)">
+                                        <circle cx="3.261" cy="3.006" r="2.72"></circle>
+                                        <circle cx="15.296" cy="3.006" r="2.719"></circle>
+                                        <circle cx="27.333" cy="3.006" r="2.72"></circle>
+                                        <circle cx="39.369" cy="3.006" r="2.72"></circle>
+                                        <circle cx="51.405" cy="3.006" r="2.72"></circle>
+                                        <circle cx="63.441" cy="3.006" r="2.72"></circle>
+                                        <circle cx="75.479" cy="3.006" r="2.72"></circle>
+                                        <circle cx="87.514" cy="3.006" r="2.719"></circle>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <svg class="absolute bottom-0 right-0 z-0 w-32 h-32 -mb-12 -mr-12 text-amber-600 fill-current"
+                        data-primary="yellow-500" viewbox="0 0 91 91" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                            <g fill-rule="nonzero">
+                                <g>
+                                    <g>
+                                        <circle cx="3.261" cy="3.445" r="2.72"></circle>
+                                        <circle cx="15.296" cy="3.445" r="2.719"></circle>
+                                        <circle cx="27.333" cy="3.445" r="2.72"></circle>
+                                        <circle cx="39.369" cy="3.445" r="2.72"></circle>
+                                        <circle cx="51.405" cy="3.445" r="2.72"></circle>
+                                        <circle cx="63.441" cy="3.445" r="2.72"></circle>
+                                        <circle cx="75.479" cy="3.445" r="2.72"></circle>
+                                        <circle cx="87.514" cy="3.445" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 12)">
+                                        <circle cx="3.261" cy="3.525" r="2.72"></circle>
+                                        <circle cx="15.296" cy="3.525" r="2.719"></circle>
+                                        <circle cx="27.333" cy="3.525" r="2.72"></circle>
+                                        <circle cx="39.369" cy="3.525" r="2.72"></circle>
+                                        <circle cx="51.405" cy="3.525" r="2.72"></circle>
+                                        <circle cx="63.441" cy="3.525" r="2.72"></circle>
+                                        <circle cx="75.479" cy="3.525" r="2.72"></circle>
+                                        <circle cx="87.514" cy="3.525" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 24)">
+                                        <circle cx="3.261" cy="3.605" r="2.72"></circle>
+                                        <circle cx="15.296" cy="3.605" r="2.719"></circle>
+                                        <circle cx="27.333" cy="3.605" r="2.72"></circle>
+                                        <circle cx="39.369" cy="3.605" r="2.72"></circle>
+                                        <circle cx="51.405" cy="3.605" r="2.72"></circle>
+                                        <circle cx="63.441" cy="3.605" r="2.72"></circle>
+                                        <circle cx="75.479" cy="3.605" r="2.72"></circle>
+                                        <circle cx="87.514" cy="3.605" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 36)">
+                                        <circle cx="3.261" cy="3.686" r="2.72"></circle>
+                                        <circle cx="15.296" cy="3.686" r="2.719"></circle>
+                                        <circle cx="27.333" cy="3.686" r="2.72"></circle>
+                                        <circle cx="39.369" cy="3.686" r="2.72"></circle>
+                                        <circle cx="51.405" cy="3.686" r="2.72"></circle>
+                                        <circle cx="63.441" cy="3.686" r="2.72"></circle>
+                                        <circle cx="75.479" cy="3.686" r="2.72"></circle>
+                                        <circle cx="87.514" cy="3.686" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 49)">
+                                        <circle cx="3.261" cy="2.767" r="2.72"></circle>
+                                        <circle cx="15.296" cy="2.767" r="2.719"></circle>
+                                        <circle cx="27.333" cy="2.767" r="2.72"></circle>
+                                        <circle cx="39.369" cy="2.767" r="2.72"></circle>
+                                        <circle cx="51.405" cy="2.767" r="2.72"></circle>
+                                        <circle cx="63.441" cy="2.767" r="2.72"></circle>
+                                        <circle cx="75.479" cy="2.767" r="2.72"></circle>
+                                        <circle cx="87.514" cy="2.767" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 61)">
+                                        <circle cx="3.261" cy="2.846" r="2.72"></circle>
+                                        <circle cx="15.296" cy="2.846" r="2.719"></circle>
+                                        <circle cx="27.333" cy="2.846" r="2.72"></circle>
+                                        <circle cx="39.369" cy="2.846" r="2.72"></circle>
+                                        <circle cx="51.405" cy="2.846" r="2.72"></circle>
+                                        <circle cx="63.441" cy="2.846" r="2.72"></circle>
+                                        <circle cx="75.479" cy="2.846" r="2.72"></circle>
+                                        <circle cx="87.514" cy="2.846" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 73)">
+                                        <circle cx="3.261" cy="2.926" r="2.72"></circle>
+                                        <circle cx="15.296" cy="2.926" r="2.719"></circle>
+                                        <circle cx="27.333" cy="2.926" r="2.72"></circle>
+                                        <circle cx="39.369" cy="2.926" r="2.72"></circle>
+                                        <circle cx="51.405" cy="2.926" r="2.72"></circle>
+                                        <circle cx="63.441" cy="2.926" r="2.72"></circle>
+                                        <circle cx="75.479" cy="2.926" r="2.72"></circle>
+                                        <circle cx="87.514" cy="2.926" r="2.719"></circle>
+                                    </g>
+                                    <g transform="translate(0 85)">
+                                        <circle cx="3.261" cy="3.006" r="2.72"></circle>
+                                        <circle cx="15.296" cy="3.006" r="2.719"></circle>
+                                        <circle cx="27.333" cy="3.006" r="2.72"></circle>
+                                        <circle cx="39.369" cy="3.006" r="2.72"></circle>
+                                        <circle cx="51.405" cy="3.006" r="2.72"></circle>
+                                        <circle cx="63.441" cy="3.006" r="2.72"></circle>
+                                        <circle cx="75.479" cy="3.006" r="2.72"></circle>
+                                        <circle cx="87.514" cy="3.006" r="2.719"></circle>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- footer-07 -->
+
+    <section class="w-full bg-black" data-primary="blue-500">
+        <div class="px-8 py-12 mx-auto max-w-7xl">
+            <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
+                <div class="col-span-3">
+                    <a href="#_" class="text-xl font-black leading-none text-white select-none logo"><img
+                            src="https://eaglevisionworld.com/wp-content/uploads/2023/03/EVI-LOGO-Mod-1-e1672137725791.png"
+                            class="w-36" alt=""></a>
+                    <p class="my-4 text-xs leading-normal text-blue-100">
+                        Beautifully hand-crafted components to help you build amazing pages.
+                    </p>
+                </div>
+                <nav class="col-span-1 md:col-span-1 lg:col-span-2">
+                    <p class="mb-3 text-xs font-semibold tracking-wider text-blue-200 uppercase">Product</p>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Features</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Integrations</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Documentation</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">FAQs</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Pricing</a>
+                </nav>
+                <nav class="col-span-1 md:col-span-1 lg:col-span-2">
+                    <p class="mb-3 text-xs font-semibold tracking-wider text-blue-200 uppercase">About</p>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Our
+                        Story</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Company</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Privacy</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Blog</a>
+                </nav>
+                <nav class="col-span-2 md:col-span-1 lg:col-span-2">
+                    <p class="mb-3 text-xs font-semibold tracking-wider text-blue-200 uppercase">Contact</p>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Advertising</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Press</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Email</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Partners</a>
+                    <a href="#"
+                        class="flex mb-3 text-sm font-medium text-blue-100 transition md:mb-2 hover:text-white">Jobs</a>
+                </nav>
+                <div class="col-span-3">
+                    <span class="inline-flex justify-center w-full mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-end">
+                        <a href="#" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="text-blue-100 hover:text-white">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                </path>
+                            </svg>
+                        </a>
+
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-col items-start justify-between pt-10 mt-10 border-t border-blue-500 md:flex-row md:items-center"
+                data-primary="blue-500">
+                <p class="mb-6 text-sm text-left text-blue-200 md:mb-0">© Copyright 2024 EVLI. All Rights Reserved.</p>
+                <div class="flex items-start justify-start space-x-6 md:items-center md:justify-center">
+                    <a href="#_" class="text-sm text-blue-200 transition hover:text-white">Terms</a>
+                    <a href="#_" class="text-sm text-blue-200 transition hover:text-white">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AlpineJS Library -->
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
