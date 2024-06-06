@@ -65,33 +65,41 @@
             </div>
             <nav id="navr"
                 class="md:relative md:w-auto w-full md:mt-0 mt-16 translate-y-2 md:translate-y-0 top-0 md:pb-0 pb-3 bg-white md:bg-transparent absolute items-center md:space-x-2 text-sm font-medium text-gray-500 md:flex hidden">
-                <a href="#_"
+                <a href="index.html"
                     class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Home</a>
-                <a href="#_"
-                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">About
-                    us</a>
-                <a href="#_"
-                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Our
-                    programmes</a>
-                <a href="#_"
-                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Student
-                    life</a>
-                <a href="#_"
+                <a href="about.html"
+                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Our School
+                </a>
+                <a href="programmes.html"
+                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Our programs
+                </a>
+                <a href="students.html"
+                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Student life
+                </a>
+                <a href="accomodation.html"
                     class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Accomodation</a>
+                <a href="contact.html"
+                    class="md:rounded bg-white md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-100 md:inline block md:w-auto w-full">Contact
+                </a>
             </nav>
             <div class="flex items-center space-x-2 text-sm pr-4 font-medium text-gray-800">
-                <a href="#_" class="inline px-3 py-2"><img
+                <a href="#_" class="inline px-3 pr-1"><img
                         src="https://img.freepik.com/vecteurs-premium/drapeau-royaume-uni-illustration-vectorielle-rayures-bleues-rouges_34480-663.jpg?w=1060"
-                        width="28px" alt=""></a>
-                <a href="#_"
-                    class="rounded bg-amber-400 px-3 py-2 text-white transition hover:bg-amber-400">Book Now</a>
+                        width="28px" alt="">
+                    </a>
+                    <a href="#_" class="inline px-3 pl-1 pr-5"><img
+                        src="https://th.bing.com/th/id/OIP.RPP275EzjhW01m70KN3J_AHaFj?w=247&h=185&c=7&r=0&o=5&pid=1.7"
+                        class="w-6" alt="">
+                    </a>
+                <a href="register.html"
+                    class="rounded bg-amber-400 px-3 py-2 text-white transition hover:bg-amber-400">Join us in Ghana</a>
             </div>
         </div>
     </section>
     <!-- Navbar End-->
 
     <!-- Carroussel -->
-    <div id="carouselExampleCaptions" class="relative h-50" data-twe-carousel-init data-twe-ride="carousel">
+    <div id="carouselExampleCaptions" class="relative h-screen" data-twe-carousel-init data-twe-ride="carousel">
         <!--Carousel indicators-->
         <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
             data-twe-carousel-indicators>
@@ -112,7 +120,7 @@
             <!--First item-->
             <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-twe-carousel-active data-twe-carousel-item style="backface-visibility: hidden">
-                <img src="assets/images/slide1.jpg" class="block w-full" alt="..." />
+                <img src="assets/images/slide1.jpg" class="block object-cover w-full h-screen" alt="..." />
                 <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
                     <h5 class="text-xl">First slide label</h5>
                     <p>
@@ -123,7 +131,7 @@
             <!--Second item-->
             <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-twe-carousel-item style="backface-visibility: hidden">
-                <img src="assets/images/slide2.jpg" class="block w-full" alt="..." />
+                <img src="assets/images/slide2.jpg" class="block w-full object-cover h-screen" alt="..." />
                 <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
                     <h5 class="text-xl">Second slide label</h5>
                     <p>
@@ -296,7 +304,7 @@
     <!-- Programmes end -->
 
     <!-- AlpineJS Library -->
-    <!-- hero-18 -->
+    <!-- CEO Messages -->
     <section
         class="relative flex flex-col-reverse min-h-screen w-full px-6 py-16 bg-gray-900 lg:pt-0 lg:flex-col lg:pb-0">
         <div
@@ -325,10 +333,10 @@
                     language.
                 </p>
                 <p>
-                    <i class="fa-brands fa-facebook text-white text-2xl mr-3"></i>
-                    <i class="fa-brands fa-linkedin text-white text-2xl"></i>
+                    <i class="fa-brands fa-facebook text-white text-3xl mr-5"></i>
+                    <i class="fa-brands fa-linkedin text-white text-3xl"></i>
                 </p>
-                <div class="flex flex-col items-center pt-2 sm:flex-row sm:pt-4">
+                <!-- <div class="flex flex-col items-center pt-2 sm:flex-row sm:pt-4">
                     <a href="/"
                         class="inline-flex items-center justify-center w-full h-12 px-6 mb-4 font-medium tracking-wide text-white transition duration-200 bg-amber-500 rounded shadow-md sm:w-auto sm:mr-4 sm:mb-0 hover:bg-amber-700 focus:shadow-outline focus:outline-none">
                         Book now
@@ -337,7 +345,7 @@
                         class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-700 rounded shadow-md sm:w-auto hover:bg-amber-700 focus:shadow-outline focus:outline-none">
                         Contact us
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
